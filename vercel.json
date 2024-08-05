@@ -4,6 +4,14 @@
       {
         "src": "index.php",
         "use": "@vercel/php"
+      },
+      {
+        "src": "application/(.*)",
+        "use": "@vercel/php"
+      },
+      {
+        "src": "system/(.*)",
+        "use": "@vercel/php"
       }
     ],
     "routes": [
