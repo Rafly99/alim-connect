@@ -21,7 +21,7 @@ class Auth extends CI_Controller {
                 redirect('publik/dashboard');
             }
         }
-        $this->load->view('login');
+        $this->load->view('index');
     }
 
     // metode login
