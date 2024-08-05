@@ -1,0 +1,38 @@
+/* Custom CSS */
+
+.bg-image {
+    background-image: url('../../image/halaman-login.svg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.btn-hijau{
+    background-color: #4ea8a7;
+    color: white;
+}
+.btn-hijau:hover{
+    background-color: #428a89;
+    color: white;
+}
+
+.login-form {
+    height: 100vh;
+}
+
+@media (max-width: 767.98px) {
+    .bg-image {
+        display: none;
+    }
+}
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.position-absolute {
+    position: absolute;
+    padding-top: 30px;
+}

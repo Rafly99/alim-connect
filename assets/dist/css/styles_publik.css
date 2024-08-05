@@ -1,0 +1,456 @@
+html, body {
+    margin: 0;
+    padding-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 60px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.header {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 1000;
+    border-bottom: 1px solid #ccc;
+}
+
+.footer {
+    background-color: rgb(238, 238, 238);
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+    position: static;
+}
+
+/* navbar content */
+nav {
+    padding-bottom: 5px;
+    font-weight: 600;
+    
+}
+#navbar{
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    display: block;
+    transition: top 0.3s;
+}
+
+nav .nav-link:hover{
+    color: #4ea8a7;
+}
+
+#hijau{
+    color: #4ea8a7;
+}
+
+#img-logo{
+    font-weight: bold;
+    padding-left: 20px;
+    width: 130px;
+}
+
+/* tagline content */
+.tagline {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.sub-judul{
+    font-size: 15px;
+}
+
+.btn-konsultasi{
+    margin-top: 20px;
+    border-radius: 7px;
+    color: white;
+    background-color: #4ea8a7;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.btn-konsultasi span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.btn-konsultasi span::after{
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.btn-konsultasi:hover span {
+    padding-right: 20px;
+    
+}
+.btn-konsultasi:hover span::after{
+    opacity: 1;
+    right: 0;
+}
+
+.title-content{
+    font-size: 23px;
+    font-weight: 700;
+}
+
+/* topik content icon */
+.topik-content {
+    display: flex;
+    width: max-content;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.horizontal-scroll {
+    width: 100%;
+    overflow-x: scroll;
+}
+
+.horizontal-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.icon{
+    width: 50px;
+    height: auto; /* Mempertahankan aspek rasio */
+    margin-top: 0; /* Menghapus margin atas */
+    padding-top: 0; /* Menghapus padding atas */
+}
+.topik-text{
+    font-size: 14px;
+}
+/* ------------ */
+
+/* responsive icon */
+@media only screen and (max-width: 992px) {
+    #img-logo{
+        width: 100px; 
+    }
+    .icon {
+        width: 40px; /* Atur lebar gambar */
+        height: auto; /* Biarkan ketinggian gambar menyesuaikan */
+    }
+    .topik-content{
+        margin-right: 10px;
+    }
+    .topik-text{
+        font-size: 11px;
+    }
+    .tagline{
+        font-size: 14px;
+    }
+    .title-content{
+        font-size: 14px;
+        text-align: center;
+    }
+    .background-top {
+        padding: 25px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .btn-konsultasi {
+        font-size: 12px;
+        padding: 7px;
+        font-weight: 300;
+    }
+    .sub-judul{
+        font-size: 12px;
+    }
+}
+/* --------- */
+
+
+.input-group .form-control {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.input-group .input-group-append .btn {
+    border-top-left-radius: 0;
+    border-color: #ccc;
+    border-bottom-left-radius: 0;
+}
+
+.table thead th {
+    cursor: pointer;
+}
+#btn-search{
+    background-color: #4ea8a7;
+    color: white;
+}
+
+#btn-search:hover{
+    background-color: #007573;
+}
+
+/* Footer design */
+ .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div .card {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px; /* Maksimal lebar card */
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tambahkan shadow untuk tampilan lebih menarik */
+    border-radius: 15px; /* Atur radius border untuk tampilan lebih menarik */
+    overflow: hidden;
+    height: 280px;
+    transition: height 0.3s ease;
+    
+}
+.card-img-top {
+    width: 100%;
+    height: auto;
+}
+.card .card-body {
+    padding: 16px; 
+}
+.card-title {
+    font-size: 1rem;
+}
+.card-jarak{
+    padding: 0;
+}
+.card p{
+    font-size: 0.75rem;
+    color: #6c757d;
+    margin: 10px 0;
+}
+.card-body .card-button{
+    background-color: #009290;
+    color: #fff;
+    border: none;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition:  background-color 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+}
+
+.card:hover {
+    height: 320px; /* Tinggi kartu saat di-hover */
+}
+.card:hover .card-button {
+    bottom: 0;
+    opacity: 1;
+}
+.card-button:hover{
+    background-color: #007573;
+}
+
+.header-chat{
+    background-color: #4ea8a7;
+    color: white;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    transition: top 0.1s ease;
+    z-index: 1000;
+}
+.header-chat.scrolled {
+    top: 0; /* Jarak dari atas saat digeser ke atas */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Contoh: shadow saat menempel */
+}
+
+/* css untuk chat publik */
+.bg-hijau{
+    background-color: #4ea8a7;
+    color: white;
+}
+.icon-white{
+    color: white;
+    font-size: 2rem;
+}
+.icon-white-delete{
+    color: white;
+    font-size: 1.5rem;
+}
+.img-profile{
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+}
+.content {
+    flex: 1;
+    margin-bottom: 50px;
+    padding: 20px;
+    height: 100vh;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.3rem;
+    font-size: 0.9rem;
+}
+
+.message-left {
+    align-items: flex-start;
+}
+
+.message-right {
+    align-items: flex-end;
+}
+
+.message-content {
+    background: #f1f1f1;
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+    max-width: 70%;
+}
+
+.message-left .message-content {
+    background-color: #f1f1f1;
+    text-align: left;
+}
+
+.message-right .message-content {
+    background-color: #4ea8a7;
+    color: white;
+    text-align: right;
+}
+
+.message-time {
+    font-size: 0.6rem;
+    color: #999;
+    margin: 2px 7px 0 7px;
+}
+ #default-messages{
+    cursor: pointer;
+    text-decoration: underline;
+    color: #003cffdd;
+}
+
+.date-separator {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #888;
+    margin: 1rem 0;
+}
+
+.status {
+    color: white;
+    font-size: 0.8em;
+}
+.footer-publik{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Custom Scrollbar Styles */
+#chat-content{
+    overflow-y: auto;
+    height: 450px;
+    padding: 1rem;
+}
+
+/* Scrollbar */
+#chat-content::-webkit-scrollbar {
+    width: 5px;
+}
+/* Track */
+#chat-content::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+/* Handle */
+#chat-content::-webkit-scrollbar-thumb {
+    background: #4ea8a7;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+#chat-content::-webkit-scrollbar-thumb:hover {
+    background: #4ea8a7;
+}
+
+/* notifikasi button */
+.btn-notif{
+    border: none;
+    font-size: 20px;
+    background-color: white;
+    margin-right: 30px;
+}
+
+.position-relative {
+    position: relative;
+  }
+  
+.position-absolute {
+    position: absolute;
+}
+  
+.btn-notif .badge {
+    display: inline-block;
+    padding: 0.4em 0.6em;
+    font-size: 50%;
+    font-weight: 500;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 50%;
+    background-color: #dc3545;
+}
+
+  .custom-badge-position {
+    top: 5px; /* Menyesuaikan posisi vertikal */
+    left: 25px; /* Menyesuaikan posisi horizontal */
+    transform: translate(-50%, -50%); /* Menggeser badge untuk penyesuaian */
+  }
+ /* dropdown custom */
+.custom-dropdown-menu {
+    width: 300px;
+    max-height: 200px;
+    overflow-y: auto; 
+}
+.custom-dropdown-menu .dropdown-item-custom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 1.25rem;
+}
+.status-indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #47bd02; /* Ganti dengan warna yang diinginkan */
+}
+
+.dropdown-item-custom:hover {
+    background-color: #f8f9fa; /* Ganti dengan warna hover yang diinginkan */
+}
+
+

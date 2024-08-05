@@ -1,0 +1,77 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 60px;
+    height: 100%;
+}
+
+div .container {
+    width: 90%;
+    
+    align-items: center;
+    padding: 30px 0 ;
+}
+
+.footer {
+    background-color: #4ea8a7;
+    color: white;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+}
+.content{
+    height: 100vh;
+}
+
+nav {
+    padding-bottom: 5px;
+    font-weight: 600;
+}
+
+#hijau{
+    color: #4ea8a7;
+}
+
+#img-logo{
+    font-weight: bold;
+    padding-left: 20px;
+    width: 130px;
+}
+
+.input-group .form-control {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.input-group .input-group-append .btn {
+    border-top-left-radius: 0;
+    border-color: #ccc;
+    border-bottom-left-radius: 0;
+}
+
+.btn-success{
+    background-color: #4ea8a7;
+    color: white;
+}
+
+#btn-hijau{
+    background-color: #4ea8a7;
+    color: white;
+}
+.table thead th {
+    cursor: pointer;
+}
+
+#img-icon {
+    width: 50px;
+    height: auto; /* Mempertahankan aspek rasio */
+    margin-top: 0; /* Menghapus margin atas */
+    padding-top: 0; /* Menghapus padding atas */
+} 
+/* css untuk chat publik */
+.bg-hijau{
+    background-color: #4ea8a7;
+    color: white;
+}
