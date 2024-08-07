@@ -116,7 +116,15 @@
 
             // Update jumlah pesan belum dibaca di tombol notifikasi
             var currentCount = parseInt($('#notifButton .badge').text()) || 0;
-            $('#notifButton .badge').text(currentCount + 1);
+            var newCount = currentCount + 1;
+
+            if (currentCount === 0) {
+                $('#notifButton').append(
+                    '<span class="badge position-absolute custom-badge-position rounded-circle">' +
+                    newCount + '</span>');
+            } else {
+                $('#notifButton .badge').text(newCount);
+            }
         }
 
         // Load dropdown pada saat halaman pertama kali dimuat
